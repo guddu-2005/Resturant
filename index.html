@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Chena Jhilli | The Ancestral Heirloom</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;800&amp;family=Manrope:wght@300;400;600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;family=Raleway:wght@200;300;400&amp;family=Tiro+Devanagari+Sanskrit&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#452b00",
+                        "on-primary-container": "#644000",
+                        "primary-fixed-dim": "#ffb955",
+                        "error-container": "#93000a",
+                        "tertiary-fixed": "#9df0f4",
+                        "primary-container": "#f5a623",
+                        "on-tertiary-fixed-variant": "#004f52",
+                        "on-tertiary-fixed": "#002021",
+                        "tertiary-container": "#70c3c7",
+                        "on-primary-fixed-variant": "#633f00",
+                        "inverse-surface": "#e4e1ec",
+                        "on-secondary-fixed-variant": "#7d2d00",
+                        "secondary-fixed-dim": "#ffb596",
+                        "tertiary": "#8cdfe3",
+                        "inverse-primary": "#835500",
+                        "surface-variant": "#34343c",
+                        "surface-dim": "#13131a",
+                        "surface-container": "#1f1f27",
+                        "inverse-on-surface": "#303038",
+                        "on-background": "#e4e1ec",
+                        "on-surface": "#e4e1ec",
+                        "surface-container-highest": "#34343c",
+                        "surface-bright": "#393841",
+                        "background": "#13131a",
+                        "on-error": "#690005",
+                        "on-tertiary": "#003739",
+                        "outline-variant": "#524534",
+                        "surface-container-lowest": "#0e0d15",
+                        "secondary": "#ffb596",
+                        "secondary-container": "#ef671f",
+                        "on-tertiary-container": "#005053",
+                        "primary-fixed": "#ffddb4",
+                        "on-surface-variant": "#d7c3ae",
+                        "error": "#ffb4ab",
+                        "surface-tint": "#ffb955",
+                        "outline": "#9f8e7a",
+                        "on-secondary-fixed": "#360f00",
+                        "on-primary-fixed": "#291800",
+                        "surface-container-high": "#2a2931",
+                        "tertiary-fixed-dim": "#81d4d8",
+                        "on-secondary": "#581e00",
+                        "surface-container-low": "#1b1b23",
+                        "surface": "#13131a",
+                        "on-secondary-container": "#4d1900",
+                        "on-error-container": "#ffdad6",
+                        "primary": "#ffc880",
+                        "secondary-fixed": "#ffdbcd"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Plus Jakarta Sans"],
+                        "brand": ["Tiro Devanagari Sanskrit"],
+                        "thin": ["Raleway"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px; /* offset for fixed navbar */
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-split {
+            background: linear-gradient(135deg, #E8621A 0%, #E8621A 50%, #0D7377 50%, #0D7377 100%);
+        }
+        .rangoli-overlay {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 0L60 40L100 50L60 60L50 100L40 60L0 50L40 40Z' fill='%23F5A623' fill-opacity='0.03'/%3E%3C/svg%3E");
+            background-repeat: repeat;
+        }
+        .ticker-wrap {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .ticker-move {
+            display: inline-block;
+            animation: ticker 30s linear infinite;
+        }
+        @keyframes ticker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(245, 166, 35, 0.4);
+        }
+        .header-pattern {
+            background-image: repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(245, 166, 35, 0.05) 20px, rgba(245, 166, 35, 0.05) 40px);
+        }
+        .saffron-magenta-gradient {
+            background: linear-gradient(135deg, #E8621A 0%, #D81B60 100%);
+        }
+        .custom-gradient-border {
+            border-top: 4px solid;
+            border-image: linear-gradient(to right, #F5A623, #E8621A, #93000A, #4D1900) 1;
+        }
+        /* Scroll-spy nav styles */
+        .nav-link {
+            color: #a3a3a3;
+        }
+        .nav-link:hover {
+            color: #fde68a;
+        }
+        .nav-link.active-nav {
+            color: #f59e0b;
+        }
+        .nav-link.active-nav::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 4px;
+            background-color: #ea580c;
+            border-radius: 50%;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+</head>
+<body class="bg-surface-dim text-on-surface font-body overflow-x-hidden selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation Shell -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 md:px-12 h-20" style="background: rgba(8, 8, 15, 0.45); backdrop-filter: blur(24px) saturate(160%); -webkit-backdrop-filter: blur(24px) saturate(160%); border-bottom: 1px solid rgba(245, 158, 11, 0.15); box-shadow: 0 4px 32px rgba(0,0,0,0.4), inset 0 1px 0 rgba(245,158,11,0.1);">
+<div class="text-2xl font-brand font-bold text-amber-500 z-50">Chena Jhilli</div>
+<nav class="hidden md:flex gap-8 items-center" id="main-nav">
+<a class="nav-link active-nav font-label text-sm tracking-widest uppercase transition-all duration-300 relative" data-section="home" href="#">Home</a>
+<a class="nav-link font-label text-sm tracking-widest uppercase transition-all duration-300 relative" data-section="menu" href="#menu">Menu</a>
+<a class="nav-link font-label text-sm tracking-widest uppercase transition-all duration-300 relative" data-section="about" href="#about">About</a>
+<a class="nav-link font-label text-sm tracking-widest uppercase transition-all duration-300 relative" data-section="gallery" href="#gallery">Gallery</a>
+<a class="nav-link font-label text-sm tracking-widest uppercase transition-all duration-300 relative" data-section="reservations" href="#reservations">Reservations</a>
+<a class="nav-link font-label text-sm tracking-widest uppercase transition-all duration-300 relative" data-section="contact" href="#contact">Contact</a>
+</nav>
+<div class="hidden md:block">
+<button class="bg-primary-container text-on-primary px-6 py-2 rounded-lg font-label font-semibold text-xs tracking-tighter hover:opacity-90 hover:scale-[0.98] transition-all cubic-bezier(0.4,0,0.2,1) active:scale-90 duration-200 uppercase">Book a Table</button>
+</div>
+<!-- Mobile menu button -->
+<div class="md:hidden flex items-center z-50">
+<button id="mobile-menu-btn" class="text-primary hover:text-primary-container focus:outline-none">
+<span class="material-symbols-outlined text-3xl" id="mobile-menu-icon">menu</span>
+</button>
+</div>
+</header>
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="fixed inset-0 z-40 bg-surface-dim/95 backdrop-blur-md transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col justify-center items-center gap-8">
+<nav class="flex flex-col gap-6 items-center w-full px-6 text-center mt-12">
+<a class="mobile-nav-link text-2xl font-label tracking-widest uppercase text-on-surface hover:text-primary transition-colors" data-section="home" href="#">Home</a>
+<a class="mobile-nav-link text-2xl font-label tracking-widest uppercase text-on-surface hover:text-primary transition-colors" data-section="menu" href="#menu">Menu</a>
+<a class="mobile-nav-link text-2xl font-label tracking-widest uppercase text-on-surface hover:text-primary transition-colors" data-section="about" href="#about">About</a>
+<a class="mobile-nav-link text-2xl font-label tracking-widest uppercase text-on-surface hover:text-primary transition-colors" data-section="gallery" href="#gallery">Gallery</a>
+<a class="mobile-nav-link text-2xl font-label tracking-widest uppercase text-on-surface hover:text-primary transition-colors" data-section="reservations" href="#reservations">Reservations</a>
+<a class="mobile-nav-link text-2xl font-label tracking-widest uppercase text-on-surface hover:text-primary transition-colors" data-section="contact" href="#contact">Contact</a>
+<button class="mt-8 bg-primary-container text-on-primary px-8 py-4 rounded-lg font-label font-bold tracking-widest uppercase w-full max-w-xs mx-auto">Book a Table</button>
+</nav>
+</div>
+
+<main class="rangoli-overlay">
+<!-- Full-Screen Hero Section -->
+<section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden">
+<!-- Real restaurant photo background -->
+<!-- Max Brightness background -->
+<div class="absolute inset-0" style="background: url('IMG_20260428_161006.jpg.jpeg') center center / cover no-repeat; filter: brightness(1.25) contrast(1.05);"></div>
+<!-- Bare minimum grounding -->
+<div class="absolute inset-0" style="background: linear-gradient(to bottom, transparent 80%, rgba(8,8,15,0.2) 100%);"></div>
+<div class="relative z-10 text-center px-8 py-10 rounded-2xl" style="background: rgba(8,8,15,0.45); backdrop-filter: blur(14px) saturate(140%); -webkit-backdrop-filter: blur(14px) saturate(140%); border: 1px solid rgba(245,158,11,0.18); box-shadow: 0 8px 48px rgba(0,0,0,0.5); max-width: 780px;">
+<h1 class="text-7xl md:text-9xl font-brand font-bold text-primary-fixed mb-6 tracking-tight" style="text-shadow: 0 2px 4px rgba(0,0,0,0.8), 0 8px 32px rgba(0,0,0,0.9), 0 0 60px rgba(245,158,11,0.3);">
+                    Chena Jhilli
+                </h1>
+<p class="font-semibold text-xl md:text-2xl text-white tracking-[0.3em] mb-12 uppercase" style="text-shadow: 0 2px 12px rgba(0,0,0,0.95), 0 1px 3px rgba(0,0,0,1);">
+                    Where Every Bite Tells a Story of Home
+                </p>
+<div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+<a href="#menu"><button class="px-10 py-4 bg-primary-container text-on-primary rounded-lg font-label font-bold tracking-widest hover:scale-105 transition-all duration-300 shadow-xl shadow-orange-950/20 uppercase">
+                        Explore Menu
+                    </button></a>
+<button class="px-10 py-4 border-2 border-primary text-white rounded-lg font-label font-bold tracking-widest hover:bg-primary/20 transition-all duration-300 uppercase" style="text-shadow: 0 1px 4px rgba(0,0,0,0.8);">
+                        Reserve Table
+                    </button>
+</div>
+</div>
+<!-- Ticker Section -->
+<div class="absolute bottom-0 w-full bg-neutral-950/40 backdrop-blur-md border-y border-outline-variant/10 py-4">
+<div class="ticker-wrap">
+<div class="ticker-move text-on-surface-variant font-label tracking-[0.2em] uppercase text-sm">
+<span>Michelin Recommended · Est. 2008 · Puri · Bhubaneswar · Kolkata · Authentic Odia Flavors · Royal Bengali Heritage · </span>
+<span>Michelin Recommended · Est. 2008 · Puri · Bhubaneswar · Kolkata · Authentic Odia Flavors · Royal Bengali Heritage · </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Row -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12 items-center">
+<div class="text-center group">
+<div class="text-4xl font-headline font-bold text-primary mb-2">16</div>
+<div class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Years of Legacy</div>
+</div>
+<div class="text-center group">
+<div class="text-4xl font-headline font-bold text-secondary mb-2">120+</div>
+<div class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Dishes</div>
+</div>
+<div class="text-center group">
+<div class="text-4xl font-headline font-bold text-tertiary mb-2">4</div>
+<div class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Locations</div>
+</div>
+<div class="text-center group">
+<div class="text-4xl font-headline font-bold text-primary mb-2">50K+</div>
+<div class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Happy Guests</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Dish Spotlight -->
+<section class="py-32 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="mb-20 text-center">
+<h2 class="text-4xl md:text-5xl font-headline font-bold mb-4 tracking-tight text-on-surface">The Heirloom Selection</h2>
+<div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+</div>
+<div class="flex overflow-x-auto md:grid md:grid-cols-3 gap-6 md:gap-8 snap-x snap-mandatory pb-8 -mx-6 px-6 md:mx-0 md:px-0 md:pb-0 hide-scrollbar">
+<!-- Card 1 -->
+<div class="group relative aspect-[3/4] rounded-lg overflow-hidden cursor-pointer hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 snap-center shrink-0 w-[85%] sm:w-[60%] md:w-auto">
+<img alt="Classic Chena Jhilli" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="Clasic chena jhilli.jpg.jpeg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-fuchsia-900/90 via-fuchsia-950/40 to-transparent"></div>
+<div class="absolute bottom-0 p-8">
+<span class="text-xs font-label uppercase tracking-widest text-fuchsia-300 mb-2 block">Signature Dessert</span>
+<h3 class="text-3xl font-headline text-on-surface font-bold">Classic Chena Jhilli</h3>
+<p class="text-sm text-fuchsia-100/70 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">Soft, melt-in-your-mouth cottage cheese dumplings soaked in golden sugar syrup — Odisha's beloved sweet indulgence.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative aspect-[3/4] rounded-lg overflow-hidden cursor-pointer hover:shadow-2xl hover:shadow-secondary/10 transition-all duration-500 md:-translate-y-8 snap-center shrink-0 w-[85%] sm:w-[60%] md:w-auto">
+<img alt="Grilled Paneer Tikka" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="Grilled Paneer Tikka.jpg.jpeg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-teal-900/90 via-teal-950/40 to-transparent"></div>
+<div class="absolute bottom-0 p-8">
+<span class="text-xs font-label uppercase tracking-widest text-teal-300 mb-2 block">Heritage Entrée</span>
+<h3 class="text-3xl font-headline text-on-surface font-bold">Grilled Paneer Tikka</h3>
+<p class="text-sm text-teal-100/70 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">Smoky char-grilled cottage cheese skewers marinated in bold spices, served with fresh mint chutney.</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative aspect-[3/4] rounded-lg overflow-hidden cursor-pointer hover:shadow-2xl hover:shadow-indigo/10 transition-all duration-500 snap-center shrink-0 w-[85%] sm:w-[60%] md:w-auto">
+<img alt="Steam Momo" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="STEAM MOMO.jpg.jpeg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-indigo-900/90 via-indigo-950/40 to-transparent"></div>
+<div class="absolute bottom-0 p-8">
+<span class="text-xs font-label uppercase tracking-widest text-indigo-300 mb-2 block">Temple Classic</span>
+<h3 class="text-3xl font-headline text-on-surface font-bold">Steamed Momos</h3>
+<p class="text-sm text-indigo-100/70 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">Pillowy hand-folded dumplings, steamed fresh and served piping hot with a fiery red chili dipping sauce.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Strip -->
+<section class="py-32 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Quote 1 -->
+<div class="relative p-10 bg-surface-container rounded-lg border-l-4 border-primary shadow-lg shadow-black/50">
+<span class="material-symbols-outlined text-primary text-5xl absolute -top-6 left-6 bg-surface-container px-2">format_quote</span>
+<p class="text-on-surface-variant font-body leading-relaxed mb-8 italic">
+                            "The flavors transported me back to my grandmother's kitchen in Nimapada. Truly the most authentic Odia cuisine I've found globally."
+                        </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container-highest flex items-center justify-center text-primary font-bold">AD</div>
+<div>
+<div class="font-headline font-bold text-on-surface">Ananya Das</div>
+<div class="text-[10px] font-label uppercase tracking-[0.2em] text-on-surface-variant">Food Critic, Kolkata</div>
+</div>
+</div>
+</div>
+<!-- Quote 2 -->
+<div class="relative p-10 bg-surface-container rounded-lg border-l-4 border-secondary shadow-lg shadow-black/50 md:translate-y-12">
+<span class="material-symbols-outlined text-secondary text-5xl absolute -top-6 left-6 bg-surface-container px-2">format_quote</span>
+<p class="text-on-surface-variant font-body leading-relaxed mb-8 italic">
+                            "A Michelin-worthy experience that celebrates heritage. The Daab Chingri was a masterclass in balance and tradition."
+                        </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container-highest flex items-center justify-center text-secondary font-bold">MK</div>
+<div>
+<div class="font-headline font-bold text-on-surface">Marcus Knight</div>
+<div class="text-[10px] font-label uppercase tracking-[0.2em] text-on-surface-variant">Epicurean Magazine</div>
+</div>
+</div>
+</div>
+<!-- Quote 3 -->
+<div class="relative p-10 bg-surface-container rounded-lg border-l-4 border-tertiary shadow-lg shadow-black/50">
+<span class="material-symbols-outlined text-tertiary text-5xl absolute -top-6 left-6 bg-surface-container px-2">format_quote</span>
+<p class="text-on-surface-variant font-body leading-relaxed mb-8 italic">
+                            "The Chena Jhilli here is an ancestral heirloom in edible form. The syrup's consistency is exactly as it was 100 years ago."
+                        </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container-highest flex items-center justify-center text-tertiary font-bold">RP</div>
+<div>
+<div class="font-headline font-bold text-on-surface">Rajesh Patnaik</div>
+<div class="text-[10px] font-label uppercase tracking-[0.2em] text-on-surface-variant">Heritage Researcher</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Menu Hero Section -->
+<section id="menu" class="max-w-7xl mx-auto px-8 mb-16 text-center pt-32">
+<h1 class="font-headline text-6xl lg:text-7xl mb-6 text-on-surface tracking-tight">The Ancestral Menu</h1>
+<p class="font-body text-on-surface-variant max-w-2xl mx-auto text-lg leading-relaxed">
+                A curated journey through the coastal flavors of Odisha and the heritage kitchens of Bengal, served with a modern editorial precision.
+            </p>
+</section>
+<!-- Sticky Tab Bar -->
+<div class="relative bg-surface/80 backdrop-blur-md py-4 mb-12 border-b border-outline-variant/10">
+<div class="max-w-7xl mx-auto px-8 flex overflow-x-auto gap-12 justify-center" style="scrollbar-width: none;">
+<a class="font-label text-sm font-bold tracking-[0.15em] text-primary whitespace-nowrap" href="#starters">STARTERS</a>
+<a class="font-label text-sm font-bold tracking-[0.15em] text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="#chaats">CHAATS</a>
+<a class="font-label text-sm font-bold tracking-[0.15em] text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="#main-course">MAIN COURSE</a>
+<a class="font-label text-sm font-bold tracking-[0.15em] text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="#sweets">SWEETS</a>
+<a class="font-label text-sm font-bold tracking-[0.15em] text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="#thali">THALI</a>
+<a class="font-label text-sm font-bold tracking-[0.15em] text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="#drinks">DRINKS</a>
+</div>
+</div>
+<!-- Menu Section: Starters -->
+<section class="max-w-7xl mx-auto px-8 mb-24" id="starters">
+<div class="flex items-center gap-6 mb-12">
+<h2 class="font-headline text-4xl text-primary whitespace-nowrap">Ocean &amp; Earth Starters</h2>
+<div class="h-[2px] w-full bg-gradient-to-r from-primary/40 to-transparent"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1: Saffron Accent -->
+<div class="bg-surface-container p-8 border-l-4 border-amber-500 hover:translate-y-[-4px] hover:border-primary-fixed transition-all ease-in-out duration-300 group">
+<div class="flex justify-between items-start mb-6">
+<h3 class="font-headline text-2xl group-hover:text-primary transition-colors">Bara Ghuguni</h3>
+<span class="font-label text-primary font-bold text-lg">₹345</span>
+</div>
+<p class="text-on-surface-variant font-body mb-8 leading-relaxed">Traditional fermented lentil fritters served with a spicy yellow pea gravy and roasted cumin garnish.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-highest text-[10px] font-bold tracking-widest text-secondary uppercase rounded-sm">Pure Veg</span>
+<span class="px-3 py-1 bg-surface-container-highest text-[10px] font-bold tracking-widest text-primary uppercase rounded-sm">House Special</span>
+</div>
+</div>
+<!-- Card 2: Teal Accent -->
+<div class="bg-surface-container p-8 border-l-4 border-tertiary hover:translate-y-[-4px] hover:border-primary-fixed transition-all ease-in-out duration-300 group">
+<div class="flex justify-between items-start mb-6">
+<h3 class="font-headline text-2xl group-hover:text-primary transition-colors">Prawn Malai Satay</h3>
+<span class="font-label text-primary font-bold text-lg">₹780</span>
+</div>
+<p class="text-on-surface-variant font-body mb-8 leading-relaxed">Succulent Bay of Bengal prawns marinated in coconut cream and Gondhoraj lime, charcoal grilled.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-highest text-[10px] font-bold tracking-widest text-error uppercase rounded-sm">Award Winner</span>
+</div>
+</div>
+<!-- Card 3: Magenta Accent -->
+<div class="bg-surface-container p-8 border-l-4 border-orange-600 hover:translate-y-[-4px] hover:border-primary-fixed transition-all ease-in-out duration-300 group">
+<div class="flex justify-between items-start mb-6">
+<h3 class="font-headline text-2xl group-hover:text-primary transition-colors">Smoked Bhetki</h3>
+<span class="font-label text-primary font-bold text-lg">₹650</span>
+</div>
+<p class="text-on-surface-variant font-body mb-8 leading-relaxed">Mustard-infused fish fillets smoked inside banana leaves with a hint of green chili and raw oil.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-highest text-[10px] font-bold tracking-widest text-secondary-container uppercase rounded-sm">Spicy</span>
+</div>
+</div>
+</div>
+<!-- Floral Divider -->
+<div class="flex justify-center my-24 opacity-20">
+<span class="material-symbols-outlined text-primary text-4xl">filter_vintage</span>
+<span class="material-symbols-outlined text-primary text-4xl mx-4">spa</span>
+<span class="material-symbols-outlined text-primary text-4xl">filter_vintage</span>
+</div>
+</section>
+<!-- Menu Section: Main Course -->
+<section class="max-w-7xl mx-auto px-8 mb-24" id="main-course">
+<div class="flex items-center gap-6 mb-12">
+<h2 class="font-headline text-4xl text-primary whitespace-nowrap">Heirloom Entrées</h2>
+<div class="h-[2px] w-full bg-gradient-to-r from-primary/40 to-transparent"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Large Image Content Pair -->
+<div class="relative h-[500px] overflow-hidden rounded shadow-2xl">
+<img alt="Signature Kosha Mangsho" class="w-full h-full object-cover" src="IMG_20260428_164606.jpg.jpeg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8">
+<h3 class="font-headline text-3xl text-primary mb-2">Paneer & Peas Curry</h3>
+<p class="text-on-surface text-lg">Soft cottage cheese and green peas slow-cooked in a bold, smoky tomato masala — paired with roti and golden paratha.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 gap-6">
+<!-- Indigo Accent -->
+<div class="bg-surface-container p-8 border-l-4 border-indigo-500 hover:translate-y-[-4px] hover:border-primary-fixed transition-all ease-in-out duration-300 group">
+<div class="flex justify-between items-start mb-6">
+<h3 class="font-headline text-2xl group-hover:text-primary transition-colors">Dalma Royale</h3>
+<span class="font-label text-primary font-bold text-lg">₹420</span>
+</div>
+<p class="text-on-surface-variant font-body mb-8 leading-relaxed">The pride of Odisha. Lentils cooked with handpicked seasonal vegetables and tempered with ghee and panch-phutana.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-highest text-[10px] font-bold tracking-widest text-secondary uppercase rounded-sm">Pure Veg</span>
+<span class="px-3 py-1 bg-surface-container-highest text-[10px] font-bold tracking-widest text-primary uppercase rounded-sm">House Special</span>
+</div>
+</div>
+<!-- Amber Accent -->
+<div class="bg-surface-container p-8 border-l-4 border-amber-500 hover:translate-y-[-4px] hover:border-primary-fixed transition-all ease-in-out duration-300 group">
+<div class="flex justify-between items-start mb-6">
+<h3 class="font-headline text-2xl group-hover:text-primary transition-colors">Chingudi Malai Curry</h3>
+<span class="font-label text-primary font-bold text-lg">₹890</span>
+</div>
+<p class="text-on-surface-variant font-body mb-8 leading-relaxed">Jumbo prawns in a creamy coconut milk gravy, flavored with cardamom and cinnamon.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-highest text-[10px] font-bold tracking-widest text-error uppercase rounded-sm">Award Winner</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Chef's Table Section -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<span class="font-label text-xs font-bold tracking-[0.3em] text-primary uppercase block mb-4">Limited Availability</span>
+<h2 class="font-headline text-5xl mb-4">The Chef's Table</h2>
+<p class="text-on-surface-variant font-body max-w-xl mx-auto">Ultra-premium culinary experiences designed for the discerning palate.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Premium Card 1 -->
+<div class="relative group h-[450px] overflow-hidden rounded bg-gradient-to-br from-indigo-950 to-neutral-900 p-1">
+<div class="bg-neutral-950 w-full h-full p-10 flex flex-col justify-between">
+<div>
+<h4 class="font-headline text-3xl mb-4 text-primary">The Maharaja Thali</h4>
+<p class="text-on-surface-variant font-body leading-relaxed mb-6">A 12-course marathon of our most prized recipes, served in traditional silverware.</p>
+<span class="font-label text-2xl font-bold text-primary">₹3,200</span>
+</div>
+<button class="w-full py-4 border border-outline-variant/30 font-label tracking-widest uppercase text-xs hover:bg-primary hover:text-on-primary transition-all duration-500">Inquire Now</button>
+</div>
+<div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-30 transition-opacity">
+<span class="material-symbols-outlined text-9xl">workspace_premium</span>
+</div>
+</div>
+<!-- Premium Card 2 -->
+<div class="relative group h-[450px] overflow-hidden rounded bg-gradient-to-br from-amber-900 to-neutral-900 p-1">
+<div class="bg-neutral-950 w-full h-full p-10 flex flex-col justify-between">
+<div>
+<h4 class="font-headline text-3xl mb-4 text-primary">Temple Feast</h4>
+<p class="text-on-surface-variant font-body leading-relaxed mb-6">Satvik preparations inspired by the Jagannath Temple's Mahaprasad, prepared without onion/garlic.</p>
+<span class="font-label text-2xl font-bold text-primary">₹1,850</span>
+</div>
+<button class="w-full py-4 border border-outline-variant/30 font-label tracking-widest uppercase text-xs hover:bg-primary hover:text-on-primary transition-all duration-500">Inquire Now</button>
+</div>
+<div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-30 transition-opacity">
+<span class="material-symbols-outlined text-9xl">temple_hindu</span>
+</div>
+</div>
+<!-- Premium Card 3 -->
+<div class="relative group h-[450px] overflow-hidden rounded bg-gradient-to-br from-emerald-950 to-neutral-900 p-1">
+<div class="bg-neutral-950 w-full h-full p-10 flex flex-col justify-between">
+<div>
+<h4 class="font-headline text-3xl mb-4 text-primary">Coastal Odyssey</h4>
+<p class="text-on-surface-variant font-body leading-relaxed mb-6">The finest catch of the morning—Lobster, Ilish, and Crab, marinated in ancestral spice blends.</p>
+<span class="font-label text-2xl font-bold text-primary">₹4,500</span>
+</div>
+<button class="w-full py-4 border border-outline-variant/30 font-label tracking-widest uppercase text-xs hover:bg-primary hover:text-on-primary transition-all duration-500">Inquire Now</button>
+</div>
+<div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-30 transition-opacity">
+<span class="material-symbols-outlined text-9xl">set_meal</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ==================== ABOUT SECTION ==================== -->
+<div id="about">
+<!-- About: Hero Split Layout -->
+<section class="flex flex-col md:flex-row min-h-screen overflow-hidden">
+<!-- Left Image -->
+<div class="w-full md:w-5/12 relative min-h-[600px] md:min-h-0">
+<div class="absolute inset-0 bg-gradient-to-br from-secondary-container/40 via-transparent to-indigo-950/60 z-10"></div>
+<img alt="Atmospheric Chef Silhouette" class="absolute inset-0 w-full h-full object-cover grayscale contrast-125 mix-blend-overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbFSUV9mD8KSLEZDfdq4_iXHeAQRxlpXQRBD7bCj2UazBQWQ9-Gd9Htw7pbwCwWQkU6yu9ZCEOwIQ12y5rSG8Mvwya5CDzJiiAKlS7kEFtnDKNVtrvDIl7_izLIBYFtbdj7aZrjTySqSCLDgE5kBhcyBOyfkW1M8uCRSKRCbOyUAE28CG1jDMOEb92adKioaZll-pRX1WCjnlhU-ZC94wok6UXTAb42iMfkR9vhy_D2whrcF44cKQ6e7SJQirT1VvWveRx663-tZ4"/>
+<div class="absolute bottom-16 left-12 z-20 max-w-xs">
+<span class="font-label text-primary tracking-[0.3em] uppercase text-xs mb-4 block">The Ancestral Heirloom</span>
+<h2 class="font-headline text-5xl text-on-surface leading-tight mb-6">Crafting Heritage Since 2008.</h2>
+</div>
+</div>
+<!-- Right Story Content -->
+<div class="w-full md:w-7/12 bg-surface-container flex items-center justify-center p-12 lg:p-24">
+<div class="max-w-xl">
+<h2 class="font-headline text-3xl text-primary mb-8">The Alchemy of Chhena</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                        Born from the sacred kitchens of Odisha and refined through the regal courts of Bengal, Chena Jhilli represents more than just a sweet; it is a cultural pulse. Our journey began with a single copper vessel and a commitment to preserving the “Jhilli” technique—a delicate balance of frying and syrup immersion that requires decades to master.
+                    </p>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-12">
+                        We don’t just cook; we curate an experience that honors the ancient Rangoli of flavors. Every dish is a testament to the artisans who came before us, ensuring that the warmth of marigolds and the scent of saffron are present in every bite.
+                    </p>
+<div class="h-0.5 w-24 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
+</div>
+</div>
+</section>
+<!-- About: Timeline Section -->
+<section class="py-32 bg-surface">
+<div class="px-12 mb-16">
+<h2 class="font-headline text-4xl text-on-surface mb-2">Our Legacy</h2>
+<div class="w-16 h-1 bg-primary mb-12"></div>
+</div>
+<div class="overflow-x-auto flex gap-12 px-12 pb-12 cursor-grab active:cursor-grabbing" style="scrollbar-width: none;">
+<!-- Milestone: 2008 -->
+<div class="flex-shrink-0 w-80 group">
+<div class="text-primary font-headline text-6xl opacity-20 mb-4 group-hover:opacity-100 transition-opacity duration-500">2008</div>
+<h3 class="font-headline text-xl text-on-surface mb-4">The First Cauldron</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">The founding of our flagship outlet in Nimapada, re-introducing traditional Chhena Jhilli to the modern palate.</p>
+</div>
+<!-- Milestone: 2012 -->
+<div class="flex-shrink-0 w-80 group mt-12">
+<div class="text-primary font-headline text-6xl opacity-20 mb-4 group-hover:opacity-100 transition-opacity duration-500">2012</div>
+<h3 class="font-headline text-xl text-on-surface mb-4">Royal Expansion</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Crossing the borders into West Bengal, merging the finest recipes from Kolkatan elite kitchens with Odia soul.</p>
+</div>
+<!-- Milestone: 2018 -->
+<div class="flex-shrink-0 w-80 group">
+<div class="text-primary font-headline text-6xl opacity-20 mb-4 group-hover:opacity-100 transition-opacity duration-500">2018</div>
+<h3 class="font-headline text-xl text-on-surface mb-4">Michelin Recognition</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Awarded the ‘Heritage Taste of the Year’ by the Culinary Institute, marking our global recognition.</p>
+</div>
+<!-- Milestone: 2022 -->
+<div class="flex-shrink-0 w-80 group mt-12">
+<div class="text-primary font-headline text-6xl opacity-20 mb-4 group-hover:opacity-100 transition-opacity duration-500">2022</div>
+<h3 class="font-headline text-xl text-on-surface mb-4">Digital Manor</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Launching our immersive digital experience, bringing the manor’s elegance to guests worldwide.</p>
+</div>
+<!-- Milestone: 2024 -->
+<div class="flex-shrink-0 w-80 group">
+<div class="text-primary font-headline text-6xl opacity-20 mb-4 group-hover:opacity-100 transition-opacity duration-500">2024</div>
+<h3 class="font-headline text-xl text-on-surface mb-4">The Future</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Continuously evolving, experimenting with sustainable dairy sourcing while guarding our ancestral secrets.</p>
+</div>
+</div>
+</section>
+<!-- About: Values Section -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+<div class="space-y-6">
+<div class="w-14 h-14 bg-surface-container-highest flex items-center justify-center rounded">
+<span class="material-symbols-outlined text-primary text-3xl">eco</span>
+</div>
+<h3 class="font-headline text-2xl">Purity</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">We source milk exclusively from organic heirloom cattle, ensuring a texture that is untouched by industrial processes.</p>
+</div>
+<div class="space-y-6">
+<div class="w-14 h-14 bg-surface-container-highest flex items-center justify-center rounded">
+<span class="material-symbols-outlined text-secondary text-3xl">temple_hindu</span>
+</div>
+<h3 class="font-headline text-2xl">Tradition</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Every recipe follows the exact measurements passed down through the Mahapatra lineage since the 17th century.</p>
+</div>
+<div class="space-y-6">
+<div class="w-14 h-14 bg-surface-container-highest flex items-center justify-center rounded">
+<span class="material-symbols-outlined text-tertiary text-3xl">flare</span>
+</div>
+<h3 class="font-headline text-2xl">Innovation</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">While our base is ancient, we employ molecular gastronomy to enhance the aromatic diffusion of our cardamoms.</p>
+</div>
+<div class="space-y-6">
+<div class="w-14 h-14 bg-surface-container-highest flex items-center justify-center rounded">
+<span class="material-symbols-outlined text-primary-fixed-dim text-3xl">diversity_1</span>
+</div>
+<h3 class="font-headline text-2xl">Hospitality</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Guests are treated as part of the family heirloom. Our manor is your manor, always.</p>
+</div>
+</div>
+</section>
+<!-- About: Team Section -->
+<section class="py-32 bg-surface-dim">
+<div class="max-w-7xl mx-auto px-12">
+<div class="text-center mb-24">
+<span class="font-label text-primary tracking-[0.2em] uppercase text-xs mb-4 block">The Guardians</span>
+<h2 class="font-headline text-4xl">Masters of the Craft</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<!-- Team Card 1 -->
+<div class="text-center group">
+<div class="relative w-48 h-48 mx-auto mb-8">
+<div class="absolute inset-0 rounded-full bg-secondary-container blur-2xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
+<div class="relative w-full h-full rounded-full border-2 border-secondary/20 p-2 group-hover:border-secondary transition-colors duration-500 overflow-hidden">
+<img alt="Head Chef" class="w-full h-full object-cover rounded-full filter brightness-90 contrast-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWP3DFchoV6WXo-9q4xrixLXKhV4E66Kgpn0oUz80aVtkYKioSouTIxojYoN-FbIpcDLkyHkHRM2KGjHGhtE2odTrENP9eF2XZAY-rxYocY7YaGaJjRRmxtm8_XtBle9zC2xrkliD3NIoXAfEivIHUBUNAQi6pDZAAsprYIoRMTnBxIT2t1mpbFWu1fGmQelz8gCjIxVnQJws7SU0nld1iThbgf02H_o9e1Tm7nqFH8hfZIRxH-1IrmEVk7ooAu00OMIx5yKmGuAo"/>
+</div>
+</div>
+<h3 class="font-headline text-2xl mb-1">Rajiv Mahapatra</h3>
+<p class="font-label text-xs text-primary uppercase tracking-widest mb-4">Executive Head Chef</p>
+<p class="text-on-surface-variant text-sm italic">&ldquo;The Jhilli is a living thing; it breathes through the sugar.&rdquo;</p>
+</div>
+<!-- Team Card 2 -->
+<div class="text-center group">
+<div class="relative w-48 h-48 mx-auto mb-8">
+<div class="absolute inset-0 rounded-full bg-tertiary blur-2xl opacity-10 group-hover:opacity-30 transition-opacity"></div>
+<div class="relative w-full h-full rounded-full border-2 border-tertiary/20 p-2 group-hover:border-tertiary transition-colors duration-500 overflow-hidden">
+<img alt="Pastry Chef" class="w-full h-full object-cover rounded-full filter brightness-90 contrast-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJQF5MqmuS5Bc9FEVR4WVnpMjQeI-9iLXxjnMRZX5gpdHSS7wdYac97uW0Fj1TbsP4A78Hi7NBut0uLIk0kJaAXuBhVnuMKbfGUYRFD4zoMkYBStsMNB_ByrYtoHk5oDixAoFvKnhrsZTIGrtTVgI1UgV5u1YZ9QcP_5UfKPLV-FUySQN7_9SlQBL0lmBa1fuNdMmtC_irkKym3xjCnFk9qp_0xonfx32JzXRQnHYC2LoEYt5Nm__FgUjBPMTlQ4PYveguBPY7Svs"/>
+</div>
+</div>
+<h3 class="font-headline text-2xl mb-1">Ananya Sen</h3>
+<p class="font-label text-xs text-tertiary uppercase tracking-widest mb-4">Master Pastry Artist</p>
+<p class="text-on-surface-variant text-sm italic">&ldquo;Balance is finding the tension between milk and fire.&rdquo;</p>
+</div>
+<!-- Team Card 3 -->
+<div class="text-center group">
+<div class="relative w-48 h-48 mx-auto mb-8">
+<div class="absolute inset-0 rounded-full bg-primary-fixed blur-2xl opacity-10 group-hover:opacity-30 transition-opacity"></div>
+<div class="relative w-full h-full rounded-full border-2 border-primary-fixed/20 p-2 group-hover:border-primary-fixed transition-colors duration-500 overflow-hidden">
+<img alt="Manager" class="w-full h-full object-cover rounded-full filter brightness-90 contrast-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDW7LWEyI7Kd_tT2XuaO42AyPmOm2OWLnM3gfz1qKfAjsp8g5Tw2evabUjO9XvRc5Va6ex2TxMucJCf5x5Bvjt9aLRXPeh0kP1Ow9WJiaCPN1_c2mEaSs-CAxxEUy-vkrCHbIVX0TgjdPJgwU4kp0OXsQm1-4nGmoWu4htldli6iLsmphF74QLdGx8gS9-9N-4UEVEGFYrUyVhddBtfe_NtLoDqNXrpmGvAvhF_iG773qRmLSAZLOBnPNCP3DnfG7wSSpS2lhLnmKM"/>
+</div>
+</div>
+<h3 class="font-headline text-2xl mb-1">Vikram Das</h3>
+<p class="font-label text-xs text-primary-fixed-dim uppercase tracking-widest mb-4">General Manager</p>
+<p class="text-on-surface-variant text-sm italic">&ldquo;We don’t serve meals; we curate cultural legacies.&rdquo;</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- ==================== END ABOUT SECTION ==================== -->
+
+<!-- ==================== GALLERY SECTION ==================== -->
+<div id="gallery" class="pt-16 pb-24 px-8 max-w-7xl mx-auto">
+<!-- Page Header -->
+<header class="mb-16 text-center">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-primary-fixed-dim mb-4 block">Visual Heritage</span>
+<h2 class="font-headline text-5xl md:text-7xl font-bold tracking-tight text-on-surface mb-6 italic">The Gallery of Heirloom</h2>
+<p class="max-w-2xl mx-auto text-on-surface-variant font-body leading-relaxed text-lg">
+                Witness the tapestry of Odia and Bengali culinary traditions through our curated lens. A journey of colors, textures, and ancestral flavors.
+            </p>
+</header>
+<!-- Category Filters -->
+<div class="flex flex-wrap justify-center gap-4 mb-16">
+<button class="px-8 py-2 rounded-full font-label text-sm tracking-widest bg-primary-container text-on-primary shadow-lg shadow-amber-500/10 transition-all duration-300">All</button>
+<button class="px-8 py-2 rounded-full font-label text-sm tracking-widest text-on-surface-variant hover:text-primary transition-all duration-300 border border-outline-variant/20 hover:border-primary/40">Food</button>
+<button class="px-8 py-2 rounded-full font-label text-sm tracking-widest text-on-surface-variant hover:text-primary transition-all duration-300 border border-outline-variant/20 hover:border-primary/40">Ambiance</button>
+<button class="px-8 py-2 rounded-full font-label text-sm tracking-widest text-on-surface-variant hover:text-primary transition-all duration-300 border border-outline-variant/20 hover:border-primary/40">Events</button>
+<button class="px-8 py-2 rounded-full font-label text-sm tracking-widest text-on-surface-variant hover:text-primary transition-all duration-300 border border-outline-variant/20 hover:border-primary/40">Awards</button>
+</div>
+<!-- Masonry Grid -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-8 auto-rows-[250px]">
+<!-- Hero Image (Col Span 2, Row Span 2) -->
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-xl bg-gradient-to-br from-fuchsia-800 to-indigo-900 flex items-end p-8 border border-white/5">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-XLS95W3HIOgzLnr66dCBmtMIV0fTUs8XjeKX3SClJQiYVrV-BQ6l2Dum6KN6HV2DKoar8B0mPxmxgrtay4r75bZRoyqHx805nfCi-uzRCuAeticGrP0KZcJ5rWFyVABkNGVdIJn7Je1P565y9iWJmxHE1pFkhBBjj4Gog5wIIlccTDueeB8e30o5HuqjoVPfsQHhSeYApTgeLjZ9LDs8mOv4Z2kEpUq6Yq80SNjP-Uo-OR7kzNVdX8dc9XiYik6Xcivy9k1Ar4k" alt="Gallery Featured"/>
+<div class="relative z-10">
+<span class="font-label text-xs tracking-widest text-secondary uppercase mb-2 block">Featured Series</span>
+<h3 class="font-headline text-3xl font-bold text-white italic">The Midnight Soirée</h3>
+</div>
+</div>
+<!-- Tile 2: Teal Gradient (Ambiance) -->
+<div class="relative group overflow-hidden rounded-xl bg-gradient-to-br from-teal-800 to-emerald-950 border border-white/5">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEbho8Y0BBC1dExnM7oNCsIQ8RVy-apfPjxfzIj-_sA4zG4sfKusn56Eq7CH8n_13jc6fUBrt5_pgyhlyxGDfSZJ5m0AWpLYcQROj10-3mZT0RWXbSZmflwhcbLbgLdjTxYlf5rCON_RSMHko3-YpTHMgBX6KxYcrifpN1fn5LT18TB06bR5O8LAerSUUGtvDYtBPOQ2iPZOfUZy0UPgvm-xfgfOMaxX8iCFATwsmgixI8agyTh7WkdZje8E-8gWjOlUKsVwV2Kf4" alt="Gallery Ambiance"/>
+<div class="absolute inset-0 bg-gradient-to-t from-teal-950/80 via-transparent to-transparent p-6 flex flex-col justify-end">
+<p class="font-label text-xs tracking-widest text-tertiary-fixed uppercase">Atmosphere</p>
+</div>
+</div>
+<!-- Tile 3: Saffron Gradient (Food) -->
+<div class="relative group overflow-hidden rounded-xl bg-gradient-to-br from-orange-600 to-amber-900 border border-white/5">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANs8KQhJD3kJfH1KqH7LimW8leZ1n9hkqXQN2iACVwndpF8dB7FAAdqS_UlekS0313-YrKWhDK4U4Ck1qBrTkt3axSVJdIkFChteKOMBQiladnWVHSGlVb3QvRjwRNHOF2ig_fJ8Kweq24IN-_ZLShBIHtAs6fYzp4oEf-D8HGQYRpJfueX2GdOaoXZwWWHYGTvnoWSujpXwEipVOIrKpgS-JsnK-kiYDqUc-qe_yzOXm4F0amZ752KinnKGvBuEeA3-Rz2eWaF60" alt="Gallery Food"/>
+<div class="absolute inset-0 bg-gradient-to-t from-amber-950/80 via-transparent to-transparent p-6 flex flex-col justify-end">
+<p class="font-label text-xs tracking-widest text-primary-fixed uppercase">Culinary Arts</p>
+</div>
+</div>
+<!-- Tile 4: Forest Green (Ingredients) -->
+<div class="relative group overflow-hidden rounded-xl bg-gradient-to-br from-emerald-900 to-neutral-900 border border-white/5 md:row-span-2">
+<img class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtnLpa2tWb2ajt4KUL662ozJmvLMGkGL9rD5TuY72Oa_8pxMebaRPEpJZOA4-bxEEv8UFEHE_PU887bQ_lUSfxr2a8oelBjZGWk8vzV7wsZ9janYxFdje8pCrX7aqN3kJ9Gss8D0qdJBFdumtfiM1P8lyJyWfx8YVe3VuniHoDOjnPDVXGFnwXz6xP9TqNnewHMY8C02veDQmETbnveTgb6wLyVmF9Oof5iacOhuk3wACiOM7CxEy5m0_4rLZIlbD_d54pwKCaDEg" alt="Gallery Spices"/>
+<div class="absolute inset-0 bg-gradient-to-t from-emerald-950/90 via-transparent to-transparent p-8 flex flex-col justify-end h-full">
+<h4 class="font-headline text-xl text-on-surface mb-2 italic">The Spice Root</h4>
+<p class="font-body text-sm text-on-surface-variant">Exploring the origins of flavor.</p>
+</div>
+</div>
+<!-- Tile 5: Indigo (Detail) -->
+<div class="relative group overflow-hidden rounded-xl bg-gradient-to-br from-indigo-900 to-slate-950 border border-white/5">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw715bzEj6O2vSFoZHyiGGh2_Lda8g6kxuXwAFQ3uibvJcl7dR6cnYeeZC7KXMNQjO9gg0eb1yDxYzUJNxKMG5GmQiW7QJtxUUFkQDoqXb3JDHxTx3V9KWUWSsvSQiArgCGC5HKH4mZ7zgpkmBuEdT9ZzXfgxadHcBFUnRsswm-6IBhJSb_xSJKTylynd4qh1phHFQL1y-1mtUjSlWbs6wHdJxD81Nl4HgjZwA8UtlQuCIk6ogReXFPUNrBQ3B3ZhbVDVRyTqel9Y" alt="Gallery Detail"/>
+<div class="absolute inset-0 bg-gradient-to-t from-indigo-950/80 via-transparent to-transparent p-6 flex flex-col justify-end">
+<p class="font-label text-xs tracking-widest text-secondary-fixed uppercase">Detail</p>
+</div>
+</div>
+<!-- Tile 6: Saffron/Gold (Events) -->
+<div class="relative group overflow-hidden rounded-xl bg-gradient-to-br from-amber-700 to-orange-950 border border-white/5">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLIttH9pqr3pqjcoqA9Lu2M4lF8LX8165E3hqVKwNo7jLhnz_DtwJpZHSgwadg6RM_8lzyAh5SwuuiTh8Kr5twsYxRM8sF9Lqg_alQ8Rr8vSYoUTP5JeXZfIULeuD5z3iJlkMWuJbJzUOpjdUcufm9UKvsPJp5eCgBL7HysYBKK5pqVC-RnJ61Lby9vyz8NUqNOSFRGL94QE1vd6h_wlGt0-BaUo8GS3DonX44qFHZJm69IoSdgUZRecgM6w5hFFfhdgOle2uTR6o" alt="Gallery Events"/>
+<div class="absolute inset-0 bg-gradient-to-t from-orange-950/80 via-transparent to-transparent p-6 flex flex-col justify-end">
+<p class="font-label text-xs tracking-widest text-primary uppercase">Celebrations</p>
+</div>
+</div>
+</section>
+<!-- Signature Divider -->
+<div class="mt-24 w-full h-[2px] bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-30"></div>
+</div>
+<!-- ==================== END GALLERY SECTION ==================== -->
+
+<!-- ==================== RESERVATIONS SECTION ==================== -->
+<div id="reservations">
+<!-- Hero Header with Pattern -->
+<section class="relative h-[409px] flex items-center justify-center overflow-hidden header-pattern">
+<div class="absolute inset-0" style="background-image:url('data:image/svg+xml,%3Csvg width=60 height=60 viewBox=0 0 60 60 xmlns=http://www.w3.org/2000/svg%3E%3Cpath d=M30 0l5 15 15 5-15 5-5 15-5-15-15-5 15-5z fill=%23F5A623 fill-opacity=0.03/%3E%3C/svg%3E'); mask-image: radial-gradient(circle at center, black 0%, transparent 80%);"></div>
+<div class="z-10 text-center px-6">
+<h2 class="font-headline text-5xl md:text-7xl font-bold text-primary mb-4 tracking-tight">Reservations</h2>
+<p class="font-body text-on-surface-variant max-w-2xl mx-auto text-lg">Secure your place at the table where heritage meets haute cuisine. Experience the ancestral legacy of Odisha and Bengal.</p>
+</div>
+</section>
+<!-- Booking Form Section -->
+<section class="relative -mt-24 pb-24 px-4 md:px-8 max-w-5xl mx-auto z-20">
+<div class="bg-surface-container shadow-2xl rounded-xl overflow-hidden custom-gradient-border">
+<div class="p-8 md:p-12">
+<form action="#" class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+<!-- Location Dropdown -->
+<div class="md:col-span-2">
+<label class="block font-label text-sm uppercase tracking-[0.15em] text-outline mb-3">Preferred Destination</label>
+<select class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary text-on-surface py-3 px-0 font-body text-lg appearance-none">
+<option class="bg-surface-container">Bhubaneswar</option>
+<option class="bg-surface-container">Puri</option>
+<option class="bg-surface-container">Kolkata</option>
+<option class="bg-surface-container">Online Catering</option>
+</select>
+</div>
+<!-- Name -->
+<div class="group">
+<label class="block font-label text-sm uppercase tracking-[0.15em] text-outline mb-2 group-focus-within:text-primary transition-colors">Full Name</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary text-on-surface py-2 px-0 placeholder:text-surface-container-highest transition-all" placeholder="Aravind Mohanty" type="text"/>
+</div>
+<!-- Phone -->
+<div class="group">
+<label class="block font-label text-sm uppercase tracking-[0.15em] text-outline mb-2 group-focus-within:text-primary transition-colors">Phone Number</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary text-on-surface py-2 px-0 placeholder:text-surface-container-highest transition-all" placeholder="+91 98765 43210" type="tel"/>
+</div>
+<!-- Email -->
+<div class="group">
+<label class="block font-label text-sm uppercase tracking-[0.15em] text-outline mb-2 group-focus-within:text-primary transition-colors">Email Address</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary text-on-surface py-2 px-0 placeholder:text-surface-container-highest transition-all" placeholder="aravind@example.com" type="email"/>
+</div>
+<!-- Guests -->
+<div class="group">
+<label class="block font-label text-sm uppercase tracking-[0.15em] text-outline mb-2 group-focus-within:text-primary transition-colors">Number of Guests</label>
+<select class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary text-on-surface py-2 px-0 appearance-none">
+<option class="bg-surface-container">2 Guests</option>
+<option class="bg-surface-container">3-4 Guests</option>
+<option class="bg-surface-container">5-6 Guests</option>
+<option class="bg-surface-container">Private Event (7+)</option>
+</select>
+</div>
+<!-- Date -->
+<div class="group">
+<label class="block font-label text-sm uppercase tracking-[0.15em] text-outline mb-2 group-focus-within:text-primary transition-colors">Date</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary text-on-surface py-2 px-0 transition-all [color-scheme:dark]" type="date"/>
+</div>
+<!-- Time -->
+<div class="group">
+<label class="block font-label text-sm uppercase tracking-[0.15em] text-outline mb-2 group-focus-within:text-primary transition-colors">Time</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary text-on-surface py-2 px-0 transition-all [color-scheme:dark]" type="time"/>
+</div>
+<!-- Occasion -->
+<div class="group">
+<label class="block font-label text-sm uppercase tracking-[0.15em] text-outline mb-2 group-focus-within:text-primary transition-colors">Occasion</label>
+<select class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary text-on-surface py-2 px-0 appearance-none">
+<option class="bg-surface-container">Casual Dining</option>
+<option class="bg-surface-container">Birthday</option>
+<option class="bg-surface-container">Anniversary</option>
+<option class="bg-surface-container">Corporate Dinner</option>
+</select>
+</div>
+<!-- Special Requests -->
+<div class="group md:col-span-2">
+<label class="block font-label text-sm uppercase tracking-[0.15em] text-outline mb-2 group-focus-within:text-primary transition-colors">Special Requests &amp; Dietary Notes</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary text-on-surface py-2 px-0 placeholder:text-surface-container-highest transition-all resize-none" placeholder="Tell us about any allergies or specific table preferences..." rows="2"></textarea>
+</div>
+<!-- Submit Button -->
+<div class="md:col-span-2 flex justify-center pt-6">
+<button class="saffron-magenta-gradient w-full md:w-auto md:px-16 py-4 rounded-lg font-label font-bold text-white uppercase tracking-[0.2em] shadow-lg shadow-secondary/20 hover:scale-[1.02] active:scale-95 transition-all duration-300" type="submit">
+                                Confirm Booking
+                            </button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Info Cards Section -->
+<section class="max-w-7xl mx-auto px-8 pb-32">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Opening Hours -->
+<div class="group p-8 rounded-lg bg-surface-container-low transition-all duration-300 hover:bg-surface-container border border-white/5">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">schedule</span>
+<h3 class="font-headline text-xl text-on-surface">Opening Hours</h3>
+</div>
+<ul class="space-y-4 font-body text-on-surface-variant">
+<li class="flex justify-between border-b border-outline-variant/20 pb-2">
+<span>Lunch</span>
+<span class="text-on-surface">12:30 &mdash; 15:30</span>
+</li>
+<li class="flex justify-between border-b border-outline-variant/20 pb-2">
+<span>Dinner</span>
+<span class="text-on-surface">19:00 &mdash; 23:00</span>
+</li>
+<li class="text-sm text-outline italic">Closed on Tuesday mornings for Heritage Cleaning.</li>
+</ul>
+</div>
+<!-- Dress Code -->
+<div class="group p-8 rounded-lg bg-surface-container-low transition-all duration-300 hover:bg-surface-container border border-white/5">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">apparel</span>
+<h3 class="font-headline text-xl text-on-surface">Dress Code</h3>
+</div>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                        To maintain the atmosphere of the <span class="text-primary italic">Digital Manor</span>, we recommend <span class="text-on-surface font-semibold">Traditional or Smart Casual</span> attire. We encourage guests to embrace the elegance of South Asian textiles.
+                    </p>
+</div>
+<!-- Cancellation Policy -->
+<div class="group p-8 rounded-lg bg-surface-container-low transition-all duration-300 hover:bg-surface-container border border-white/5">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">policy</span>
+<h3 class="font-headline text-xl text-on-surface">Cancellation</h3>
+</div>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                        Cancellations must be made at least <span class="text-on-surface font-semibold">6 hours</span> in advance. For groups larger than 8, a 24-hour notice is required to avoid a heritage commitment fee.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Decorative Quote Strip -->
+<section class="h-64 relative overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-full h-px bg-gradient-to-r from-transparent via-primary to-transparent opacity-20"></div>
+</div>
+<div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+<span class="font-label text-sm uppercase tracking-[0.4em] text-outline mb-4">The Heirloom Experience</span>
+<p class="font-headline text-2xl italic text-on-surface-variant">&ldquo;In every Jhilli, a story of three generations.&rdquo;</p>
+</div>
+</section>
+</div>
+<!-- ==================== END RESERVATIONS SECTION ==================== -->
+
+<!-- ==================== CONTACT SECTION ==================== -->
+<div id="contact" class="pt-20 pb-20 px-6 max-w-7xl mx-auto">
+<!-- Hero -->
+<section class="mb-24 text-center">
+<h2 class="text-5xl md:text-7xl font-headline text-on-surface mb-6 tracking-tight">Connect with the <span class="text-primary-container">Heirloom</span></h2>
+<p class="max-w-2xl mx-auto text-on-surface-variant font-body text-lg leading-relaxed">
+                Whether you're seeking a table for a celebration or wish to inquire about our culinary heritage, our stewards are here to assist you.
+            </p>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+<!-- Left Column: Info & Map -->
+<div class="space-y-12">
+<!-- 2x2 Grid of Contact Info Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Card 1: Visit -->
+<div class="bg-surface-container p-8 rounded-xl border-b-4 border-primary-container group hover:scale-[1.02] transition-all duration-300">
+<span class="material-symbols-outlined text-primary mb-4 block">location_on</span>
+<h3 class="font-headline text-xl mb-2 text-on-surface">The Manor</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed font-body">12 Heritage Lane, Fine Dining District,<br/>Bhubaneswar, Odisha 751001</p>
+</div>
+<!-- Card 2: Speak -->
+<div class="bg-surface-container p-8 rounded-xl border-b-4 border-secondary-container group hover:scale-[1.02] transition-all duration-300">
+<span class="material-symbols-outlined text-secondary mb-4 block">call</span>
+<h3 class="font-headline text-xl mb-2 text-on-surface">Reservations</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed font-body">+91 674 230 4500<br/>+91 98765 43210</p>
+</div>
+<!-- Card 3: Write -->
+<div class="bg-surface-container p-8 rounded-xl border-b-4 border-tertiary-container group hover:scale-[1.02] transition-all duration-300">
+<span class="material-symbols-outlined text-tertiary mb-4 block">mail</span>
+<h3 class="font-headline text-xl mb-2 text-on-surface">Inquiries</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed font-body">hello@chenajhilli.com<br/>events@chenajhilli.com</p>
+</div>
+<!-- Card 4: Hours -->
+<div class="bg-surface-container p-8 rounded-xl border-b-4 border-primary-fixed-dim group hover:scale-[1.02] transition-all duration-300">
+<span class="material-symbols-outlined text-primary-fixed-dim mb-4 block">schedule</span>
+<h3 class="font-headline text-xl mb-2 text-on-surface">Dining Hours</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed font-body">Lunch: 12:30 PM &ndash; 3:30 PM<br/>Dinner: 7:00 PM &ndash; 11:00 PM</p>
+</div>
+</div>
+<!-- Dark Map Placeholder -->
+<div class="relative w-full h-[400px] bg-surface-container-low rounded-xl overflow-hidden">
+<div class="absolute inset-0 grayscale contrast-[1.1] brightness-[0.4]" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBUOugVvaUwFv6U_6upuJUr_yODwtvtCbLyTpueKG-6HJjLepr5poWJUeBrH6Ws5VINB1QkAB2Scl2CNJ4SsyhhLE1XH972RL6RHmWENXR_FLtfGXItTwoCANOinqo8lW4kqwDl2AdVMLRS6mL-Ko4neNYz5xjma5VUPNKTE9US4FLdsFJW9JJAZHFfK1rLa9MxDo7mTDgjq0NVghEK21vrbU4BNfpMiOuusGBujCcxIRLvWNwYWdbLUhVJI1n-BMJ2sxLbshTj6TU'); background-size: cover; background-position: center;"></div>
+<div class="absolute inset-0 bg-indigo-950/10 mix-blend-multiply"></div>
+<!-- Pin Icon -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(245,166,35,0.4)] animate-bounce">
+<span class="material-symbols-outlined text-on-primary text-2xl" style="font-variation-settings:'FILL' 1;">restaurant</span>
+</div>
+<div class="mt-2 px-4 py-1 bg-surface-container-highest rounded-full text-xs font-label tracking-widest text-primary uppercase">Chena Jhilli</div>
+</div>
+<div class="absolute bottom-4 right-4 bg-surface-container-highest/80 backdrop-blur-md px-4 py-2 rounded-lg text-xs font-label text-on-surface-variant">Bhubaneswar, India</div>
+</div>
+<!-- Social Links Row -->
+<div class="flex items-center gap-10 justify-center md:justify-start">
+<span class="text-xs font-label uppercase tracking-[0.2em] text-outline">Follow the Legacy</span>
+<div class="h-[1px] w-12 bg-outline-variant/30"></div>
+<div class="flex gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+</a>
+</div>
+</div>
+</div>
+<!-- Right Column: Message Form -->
+<div class="bg-surface-container rounded-xl p-10 relative overflow-hidden">
+<!-- Subtle Rangoli Overlay -->
+<div class="absolute top-0 right-0 w-32 h-32 opacity-10 -mr-10 -mt-10 pointer-events-none">
+<svg class="w-full h-full text-primary-container fill-current" viewBox="0 0 100 100"><path d="M50 0L60 40L100 50L60 60L50 100L40 60L0 50L40 40Z"/></svg>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline text-3xl text-on-surface mb-2">Send a Message</h3>
+<p class="text-on-surface-variant font-body text-sm mb-10 leading-relaxed tracking-wide">
+                        Entrust us with your thoughts, and our curator will respond within a cycle of the sun.
+                    </p>
+<form class="space-y-8">
+<div class="relative">
+<input class="peer w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 text-on-surface font-body py-3 px-0 placeholder-transparent transition-colors duration-300" id="contact-name" placeholder=" " type="text"/>
+<label class="absolute left-0 top-3 text-on-surface-variant font-label text-sm uppercase tracking-widest transition-all duration-300 peer-placeholder-shown:text-base peer-placeholder-shown:top-3 peer-focus:-top-4 peer-focus:text-xs peer-focus:text-primary" for="contact-name">Full Name</label>
+</div>
+<div class="relative">
+<input class="peer w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 text-on-surface font-body py-3 px-0 placeholder-transparent transition-colors duration-300" id="contact-email" placeholder=" " type="email"/>
+<label class="absolute left-0 top-3 text-on-surface-variant font-label text-sm uppercase tracking-widest transition-all duration-300 peer-placeholder-shown:text-base peer-placeholder-shown:top-3 peer-focus:-top-4 peer-focus:text-xs peer-focus:text-primary" for="contact-email">Email Address</label>
+</div>
+<div class="relative">
+<select class="peer w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 text-on-surface-variant font-body py-3 px-0 appearance-none transition-colors duration-300" id="contact-subject">
+<option disabled selected value="">Select Inquiry Type</option>
+<option class="bg-surface-container" value="general">General Inquiry</option>
+<option class="bg-surface-container" value="event">Private Events</option>
+<option class="bg-surface-container" value="feedback">Guest Feedback</option>
+<option class="bg-surface-container" value="press">Press &amp; Media</option>
+</select>
+<label class="absolute left-0 -top-4 text-xs text-primary font-label uppercase tracking-widest" for="contact-subject">Inquiry Type</label>
+</div>
+<div class="relative">
+<textarea class="peer w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 text-on-surface font-body py-3 px-0 placeholder-transparent transition-colors duration-300 resize-none" id="contact-message" placeholder=" " rows="4"></textarea>
+<label class="absolute left-0 top-3 text-on-surface-variant font-label text-sm uppercase tracking-widest transition-all duration-300 peer-placeholder-shown:text-base peer-placeholder-shown:top-3 peer-focus:-top-4 peer-focus:text-xs peer-focus:text-primary" for="contact-message">Your Message</label>
+</div>
+<button class="w-full bg-primary-container text-on-primary py-4 rounded font-label font-bold uppercase tracking-[0.2em] shadow-xl hover:opacity-95 hover:scale-[0.99] transition-all duration-300 active:scale-95 flex items-center justify-center gap-3" type="submit">
+<span>Relay Message</span>
+<span class="material-symbols-outlined text-xl">send</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+<!-- ==================== END CONTACT SECTION ==================== -->
+</main>
+<!-- Footer Shell -->
+<footer class="bg-neutral-950 pt-20 pb-10 border-t border-outline-variant/10">
+<div class="w-full max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+<div>
+<div class="text-xl font-brand text-amber-500 mb-6">Chena Jhilli</div>
+<p class="text-sm font-label text-neutral-400 tracking-wide leading-relaxed">
+                    Preserving the culinary artifacts of Odisha and Bengal since 2008. A sanctuary for fine dining and heritage flavors.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label text-on-surface font-bold tracking-widest text-xs uppercase mb-2">Explore</h4>
+<a class="text-neutral-500 hover:text-amber-200 text-sm font-label transition-all duration-300" href="#">Privacy Policy</a>
+<a class="text-neutral-500 hover:text-amber-200 text-sm font-label transition-all duration-300" href="#">Terms of Service</a>
+<a class="text-neutral-500 hover:text-amber-200 text-sm font-label transition-all duration-300" href="#">Career</a>
+<a class="text-neutral-500 hover:text-amber-200 text-sm font-label transition-all duration-300" href="#">Press Kit</a>
+</div>
+<div>
+<h4 class="font-label text-on-surface font-bold tracking-widest text-xs uppercase mb-4">Connect</h4>
+<div class="flex justify-center md:justify-start gap-6">
+<a class="text-neutral-500 hover:text-amber-500 transition-colors duration-300" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="text-neutral-500 hover:text-amber-500 transition-colors duration-300" href="#">
+<span class="material-symbols-outlined">local_dining</span>
+</a>
+<a class="text-neutral-500 hover:text-amber-500 transition-colors duration-300" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
+</div>
+</div>
+</div>
+<div class="w-full text-center mt-20 px-8 border-t border-neutral-900 pt-10">
+<p class="font-serif text-neutral-400 text-sm tracking-wide">
+                © 2024 Chena Jhilli. The Ancestral Heirloom of Odia &amp; Bengali Fine Dining.
+            </p>
+</div>
+</footer>
+<!-- Floating Action Button for Mobile Context -->
+<button class="md:hidden fixed bottom-8 right-8 w-14 h-14 bg-primary-container text-on-primary rounded-full shadow-2xl shadow-indigo-950/40 flex items-center justify-center z-40">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+</button>
+<script>
+(function() {
+  // Map each section ID to its nav link
+  const sections = ['home', 'menu', 'about', 'gallery', 'reservations', 'contact'];
+  const navLinks = {};
+  sections.forEach(id => {
+    const el = document.querySelector(`[data-section="${id}"]`);
+    if (el) navLinks[id] = el;
+  });
+
+  function setActive(id) {
+    Object.values(navLinks).forEach(link => link.classList.remove('active-nav'));
+    if (navLinks[id]) navLinks[id].classList.add('active-nav');
+  }
+
+  // Mobile menu logic
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+
+  function toggleMobileMenu() {
+    mobileMenu.classList.toggle('translate-x-full');
+    if (mobileMenu.classList.contains('translate-x-full')) {
+      mobileMenuIcon.innerText = 'menu';
+    } else {
+      mobileMenuIcon.innerText = 'close';
+    }
+  }
+
+  if(mobileMenuBtn) {
+    mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+  }
+
+  // Smooth scroll with navbar offset on nav link click
+  const NAV_HEIGHT = 80;
+  document.querySelectorAll('[data-section]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      if(mobileMenu && !mobileMenu.classList.contains('translate-x-full') && this.classList.contains('mobile-nav-link')) {
+        toggleMobileMenu();
+      }
+
+      const sectionId = this.getAttribute('data-section');
+      if (sectionId === 'home') {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        setActive('home');
+        return;
+      }
+      const target = document.getElementById(sectionId);
+      if (target) {
+        e.preventDefault();
+        const top = target.getBoundingClientRect().top + window.scrollY - NAV_HEIGHT;
+        window.scrollTo({ top, behavior: 'smooth' });
+        setActive(sectionId);
+      }
+    });
+  });
+
+  // IntersectionObserver: auto-highlight active section while scrolling
+  const observerOptions = {
+    root: null,
+    threshold: 0,
+    rootMargin: '-20% 0px -60% 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        setActive(entry.target.id);
+      }
+    });
+  }, observerOptions);
+
+  ['menu', 'about', 'gallery', 'reservations', 'contact'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) observer.observe(el);
+  });
+
+  // Highlight Home when hero is visible
+  const heroObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) setActive('home');
+    });
+  }, { threshold: 0, rootMargin: '0px 0px -80% 0px' });
+
+  const heroEl = document.getElementById('hero');
+  if (heroEl) heroObserver.observe(heroEl);
+})();
+</script>
+</body></html>
